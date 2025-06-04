@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  font-family: "Roboto Light", "Segoe UI", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  width: 99%;
+  z-index: 999;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-left a,
+.nav-right a {
+  margin: 0 10px;
+  color: #000000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.logo img {
+  height: 90px;
+  margin: 0 80px 0 0;
+}
+
+.btn-buy {
+  background-color: #2b358c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 20px;
+  position: absolute;
+  top: 70px;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.mobile-menu a,
+.mobile-menu button {
+  margin: 10px 0;
+  font-size: 16px;
+  text-align: left;
+}
+
+.mobile-menu.hidden {
+  display: none;
+}
+
+.hero {
+  background: url('../images/bg.jpg') no-repeat center center/cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 70px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 2;
+  padding: 0 20px;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.btn-primary {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #2b358c;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.counter-container {
+  font-size: 48px;
+  font-weight: bold;
+  color: #1a237e;
+}
+
+.label {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #3f51b5;
+}
+
+.counter-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 0 0;
+}
+
+.counter-section img{
+  width: 360px;
+  height: 360px;
+}
+
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 2.5rem;
+  color: #1a237e;
+  margin-bottom: 10px;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.slider-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slide {
+  flex: 0 0 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.drink-card {
+  background: #e6ecf9;
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 250px;
+  margin: auto;
+}
+
+.drink-card img {
+  width: 50%;
+  border-radius: 10px;
+}
+
+.drink-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #1a237e;
+  margin: 10px 0;
+}
+
+.drink-info {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.divider {
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.nav-buttons {
+  margin-top: 20px;
+}
+
+.nav-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 0 10px;
+  border: none;
+  background: #1a237e;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #3949ab;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pitch-box {
+  background-color: #1a237e;
+  color: white;
+  border-radius: 15px;
+  padding: 30px;
+  flex: 1 1 600px;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.pitch-box h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.pitch-box p {
+  font-size: 1rem;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.input-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.input-group input,
+textarea {
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  background-color: #cbbba0;
+  color: white;
+  padding: 12px 30px;
+  font-weight: bold;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  width: 150px;
+  align-self: flex-start;
+  margin-top: 10px;
+}
+
+.side-box {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  flex: 1 1 280px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.side-box img.drinks {
+  max-width: 50%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.side-box h3 {
+  font-size: 1.2rem;
+  color: #1a237e;
+  margin: 10px 0;
+}
+
+.store-icons img {
+  width: 110px;
+  margin: 10px 5px;
+}
+
+@media (max-width: 768px) {
+  .pitch-box,
+  .side-box {
+    flex: 1 1 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px 20px;
+  background-color: #fff;
+  border-top: 1px solid #dce5f4;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 14px;
+  color: #222;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right {
+  text-align: right;
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer-right a {
+  display: block;
+  color: #222;
+  text-decoration: none;
+  margin-bottom: 6px;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 600px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .slide {
+    flex: 0 0 33.33%;
+  }
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+  .nav-left,
+  .nav-right {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+}
