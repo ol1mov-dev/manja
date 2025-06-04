@@ -1,11 +1,13 @@
+/* === Fonts === */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+/* === Global Styles === */
+* {
   font-family: "Bebas Neue", "Segoe UI", sans-serif;
   letter-spacing: 2px;
 }
 
-body{
+body {
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -14,6 +16,7 @@ body{
   overflow-x: hidden;
 }
 
+/* === Navbar === */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -30,14 +33,14 @@ body{
 .nav-left a,
 .nav-right a {
   margin: 0 10px;
-  color: #000000;
+  color: #000;
   text-decoration: none;
   font-size: 16px;
 }
 
 .logo img {
   height: 90px;
-  margin: 0 80px 0 0;
+  margin-right: 80px;
 }
 
 .btn-buy {
@@ -80,6 +83,7 @@ body{
   display: none;
 }
 
+/* === Hero Section === */
 .hero {
   background: url('../images/bg.jpg') no-repeat center center/cover;
   height: 100vh;
@@ -101,7 +105,7 @@ body{
 
 .hero-content {
   position: relative;
-  color: #f8efde !important;
+  color: #f8efde;
   text-align: center;
   z-index: 2;
   padding: 0 20px;
@@ -129,6 +133,24 @@ body{
   cursor: pointer;
 }
 
+/* === Counter Section === */
+.counter-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.counter-section img {
+  width: 360px;
+  height: 360px;
+}
+
+.counter-section h1 {
+  font-size: 3rem;
+}
+
 .counter-container {
   font-size: 48px;
   font-weight: bold;
@@ -141,31 +163,15 @@ body{
   color: #3f51b5;
 }
 
-.counter-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 30px 0 0 0;
-}
-
-.counter-section img{
-  width: 360px;
-  height: 360px;
-}
-
+/* === Generic Section === */
 .section {
   padding: 60px 20px;
   text-align: center;
-
 }
 
-.counter-section h1{
-  font-size: 3rem;
-}
 .section h2 {
   font-size: 2.5rem;
-  color: #fd97cd ;
+  color: #fd97cd;
   margin-bottom: 10px;
 }
 
@@ -175,6 +181,7 @@ body{
   margin-bottom: 40px;
 }
 
+/* === Slider === */
 .slider-container {
   position: relative;
   overflow: hidden;
@@ -194,6 +201,7 @@ body{
   box-sizing: border-box;
 }
 
+/* === Drink Card === */
 .drink-card {
   background: #e6ecf9;
   border-radius: 12px;
@@ -206,16 +214,17 @@ body{
   width: 50%;
   border-radius: 10px;
 }
+
 .drink-card-img-2 {
-  padding: 65px 0 0 0;
+  padding-top: 65px;
 }
 
 .drink-card-img-3 {
   width: 48% !important;
 }
 
-.drink-card-img-4{
-  width: 47% !important;
+.drink-card-img-4 {
+  width: 48% !important;
 }
 
 .drink-title {
@@ -256,6 +265,7 @@ body{
   background: #3949ab;
 }
 
+/* === Pitch Section === */
 .wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -288,6 +298,7 @@ body{
   line-height: 1.6;
 }
 
+/* === Form === */
 .input-group {
   display: flex;
   flex-wrap: wrap;
@@ -311,7 +322,7 @@ textarea {
 
 .submit-btn {
   background-color: #cbbba0;
-  color: #000000;
+  color: #000;
   padding: 12px 30px;
   font-weight: bold;
   border: none;
@@ -322,6 +333,7 @@ textarea {
   margin-top: 10px;
 }
 
+/* === Side Box === */
 .side-box {
   background-color: white;
   border-radius: 15px;
@@ -348,18 +360,7 @@ textarea {
   margin: 10px 5px;
 }
 
-@media (max-width: 768px) {
-  .pitch-box,
-  .side-box {
-    flex: 1 1 100%;
-  }
-
-  .submit-btn {
-    width: 100%;
-    text-align: center;
-  }
-}
-
+/* === Footer === */
 .footer {
   display: flex;
   flex-wrap: wrap;
@@ -396,30 +397,7 @@ textarea {
   text-decoration: underline;
 }
 
-@media (max-width: 600px) {
-  .footer {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .footer-right {
-    text-align: center;
-    margin-top: 20px;
-  }
-}
-@media (min-width: 600px) {
-  .slide {
-    flex: 0 0 50%;
-  }
-}
-
-@media (min-width: 900px) {
-  .slide {
-    flex: 0 0 33.33%;
-  }
-}
-
-/* --- Responsive Design --- */
+/* === Responsive === */
 @media (max-width: 768px) {
   .nav-left,
   .nav-right {
@@ -441,5 +419,39 @@ textarea {
   .btn-primary {
     font-size: 14px;
     padding: 10px 20px;
+  }
+
+  .pitch-box,
+  .side-box {
+    flex: 1 1 100%;
+  }
+
+  .submit-btn {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-right {
+    text-align: center;
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 600px) {
+  .slide {
+    flex: 0 0 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .slide {
+    flex: 0 0 33.33%;
   }
 }
