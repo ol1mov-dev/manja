@@ -1,6 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Pacifico&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
-  font-family: "Roboto Light", "Segoe UI", sans-serif;
+  font-family: "Bebas Neue", "Segoe UI", sans-serif;
+  letter-spacing: 2px;
 }
 
 body{
@@ -8,7 +10,8 @@ body{
   padding: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff;
+  background-color: #f8efde;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -16,7 +19,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 5px 10px;
-  background-color: #ffffff;
+  background-color: #f8efde;
   position: fixed;
   top: 0;
   width: 99%;
@@ -29,7 +32,7 @@ body{
   margin: 0 10px;
   color: #000000;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .logo img {
@@ -38,7 +41,7 @@ body{
 }
 
 .btn-buy {
-  background-color: #2b358c;
+  background-color: #366e2a;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -98,14 +101,14 @@ body{
 
 .hero-content {
   position: relative;
-  color: white;
+  color: #f8efde !important;
   text-align: center;
   z-index: 2;
   padding: 0 20px;
 }
 
 .hero-content h1 {
-  font-size: 48px;
+  font-size: 64px;
   margin-bottom: 20px;
 }
 
@@ -117,7 +120,7 @@ body{
 .btn-primary {
   margin-top: 20px;
   padding: 12px 24px;
-  background-color: #2b358c;
+  background-color: #3d752b;
   border: none;
   border-radius: 25px;
   color: white;
@@ -129,7 +132,7 @@ body{
 .counter-container {
   font-size: 48px;
   font-weight: bold;
-  color: #1a237e;
+  color: #fd97cd;
 }
 
 .label {
@@ -154,11 +157,15 @@ body{
 .section {
   padding: 60px 20px;
   text-align: center;
+
 }
 
+.counter-section h1{
+  font-size: 3rem;
+}
 .section h2 {
   font-size: 2.5rem;
-  color: #1a237e;
+  color: #fd97cd ;
   margin-bottom: 10px;
 }
 
@@ -177,6 +184,7 @@ body{
 
 .slider-track {
   display: flex;
+  height: 400px;
   transition: transform 0.5s ease;
 }
 
@@ -198,16 +206,27 @@ body{
   width: 50%;
   border-radius: 10px;
 }
+.drink-card-img-2 {
+  padding: 65px 0 0 0;
+}
+
+.drink-card-img-3 {
+  width: 48% !important;
+}
+
+.drink-card-img-4{
+  width: 47% !important;
+}
 
 .drink-title {
   font-weight: bold;
   font-size: 1.1rem;
-  color: #1a237e;
+  color: #fd97cd;
   margin: 10px 0;
 }
 
 .drink-info {
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: #555;
   margin-bottom: 5px;
 }
@@ -227,7 +246,7 @@ body{
   font-size: 16px;
   margin: 0 10px;
   border: none;
-  background: #1a237e;
+  background: #366e2a;
   color: white;
   border-radius: 5px;
   cursor: pointer;
@@ -248,7 +267,7 @@ body{
 }
 
 .pitch-box {
-  background-color: #1a237e;
+  background-color: #3d752b;
   color: white;
   border-radius: 15px;
   padding: 30px;
@@ -292,7 +311,7 @@ textarea {
 
 .submit-btn {
   background-color: #cbbba0;
-  color: white;
+  color: #000000;
   padding: 12px 30px;
   font-weight: bold;
   border: none;
@@ -312,7 +331,7 @@ textarea {
   text-align: center;
 }
 
-.side-box img.drinks {
+.side-box img .drinks {
   max-width: 50%;
   border-radius: 10px;
   margin-bottom: 15px;
@@ -346,8 +365,8 @@ textarea {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 30px 20px;
-  background-color: #fff;
-  border-top: 1px solid #dce5f4;
+  background-color: #f8efde;
+  border-top: 1px solid #f8efde;
   font-family: 'Segoe UI', sans-serif;
   font-size: 14px;
   color: #222;
